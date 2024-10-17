@@ -7,7 +7,8 @@ RUN pip install selenium
 WORKDIR /app
 
 # Copy local files to the container
-COPY . /app
+COPY ./google_images_download /app
 
 # Define the entry point to run the app
-ENTRYPOINT ["python", "google-images-download.py"]
+ENTRYPOINT ["python", "google_images_download.py"]
+
